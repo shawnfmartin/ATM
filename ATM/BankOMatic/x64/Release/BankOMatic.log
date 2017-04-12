@@ -1,0 +1,13 @@
+﻿  Account.cpp
+  Bank.cpp
+  Customer.cpp
+  main.cpp
+  misc.cpp
+  Transducer.cpp
+  Generating code
+  861 of 868 functions (99.2%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  BankOMatic.vcxproj -> C:\Users\hp\Desktop\cen\COP3014 BankOMaticAdvancedHW WalmerGarrett\x64\Release\BankOMatic.exe
+  BankOMatic.vcxproj -> C:\Users\hp\Desktop\cen\COP3014 BankOMaticAdvancedHW WalmerGarrett\x64\Release\BankOMatic.pdb (Full PDB)
