@@ -3,7 +3,10 @@
 #include "misc.h"
 using namespace std;
 
-
+Transducer::Transducer(int customerNumber)
+{
+	sessionCustomerNumber = customerNumber;
+}
 string Transducer::transduce(string command)
 {
 	try
@@ -20,25 +23,25 @@ string Transducer::transduce(string command)
 			result += "\tCLEAR\n";
 			result += "\tQUIT(Q)\n";
 			result += "-------------------\n";
-			result += "\tADD_CUSTOMER(AC) <NAME>;<DOB>;<SS#>\n";
-			result += "\tREMOVE_CUSTOMER(RC) <Customer#>\n";
-			result += "\tFIND_CUSTOMER(FC) <Customer#>\n";
-			result += "\tSHOW_CUSTOMER_LIST(SCL)\n";
-			result += "\tTEST_ADD_CUSTOMERS(TAC) <numberOfTestCustomers>\n";
-			result += "-------------------\n";
-			result += "\tADD_ACCOUNT(AA) <Customer#>;<InitialAmmount>;<AccountType>\n";
-			result += "\tREMOVE_ACCOUNT(RA) <Account#>\n";
+			//result += "\tADD_CUSTOMER(AC) <NAME>;<DOB>;<SS#>\n";
+			//result += "\tREMOVE_CUSTOMER(RC) <Customer#>\n";
+			//result += "\tFIND_CUSTOMER(FC) <Customer#>\n";
+			//result += "\tSHOW_CUSTOMER_LIST(SCL)\n";
+			//result += "\tTEST_ADD_CUSTOMERS(TAC) <numberOfTestCustomers>\n";
+			//result += "-------------------\n";
+			//result += "\tADD_ACCOUNT(AA) <Customer#>;<InitialAmmount>;<AccountType>\n";
+			//result += "\tREMOVE_ACCOUNT(RA) <Account#>\n";
 			result += "\tFIND_ACCOUNT(FA) <Account#>\n";
-			result += "\tSHOW_ACCOUNT_LIST(SAL)\n";
-			result += "\tTEST_ADD_ACCOUNTS(TAA) <numberOfTestAccounts>\n";
+			//result += "\tSHOW_ACCOUNT_LIST(SAL)\n";
+			//result += "\tTEST_ADD_ACCOUNTS(TAA) <numberOfTestAccounts>\n";
 			result += "-------------------\n";
 			result += "\tMAKE_DEPOSIT(MD) <Account#;Amount>\n";
 			result += "\tMAKE_WIthdrawal(MW) <Account#;Amount>\n";
 			result += "\tMAKE_TRANSFER(MT) <SourceAccount#>;<DestinationAccount#>;<Amount>\n";
-			result += "\tADD_CUSTOMER_TO_ACCOUNT(ACTA) <Customer#>;<Account#>\n";
+			//result += "\tADD_CUSTOMER_TO_ACCOUNT(ACTA) <Customer#>;<Account#>\n";
 			result += "\tGET_CUSTOMER_TOTAL_ASSETS(GCTA) <Customer#>\n";
-			result += "\tREPORT_TOTAL_BANK_HOLDINGS(RTBH)\n";
-			result += "\tLIST_CUSTOMERS_WITH_HOLDINGS_ABOVE(LCWHA)\n";
+			//result += "\tREPORT_TOTAL_BANK_HOLDINGS(RTBH)\n";
+			//result += "\tLIST_CUSTOMERS_WITH_HOLDINGS_ABOVE(LCWHA)\n";
 		}
 		else if ((token[0] == "QUIT") || (token[0] == "Q"))
 		{
